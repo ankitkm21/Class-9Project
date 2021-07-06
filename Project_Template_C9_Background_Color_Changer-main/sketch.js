@@ -16,6 +16,7 @@ function setup() {
   btn_green= createButton("GREEN");
   btn_green.position(250,50)
   btn_green.mousePressed(green_bg)
+  background("white");
 }
 
 function draw() {
@@ -28,7 +29,7 @@ function draw() {
     background("red")
   }
 
-  background("white");
+  
 }
 
 
