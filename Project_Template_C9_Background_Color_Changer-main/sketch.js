@@ -1,9 +1,9 @@
 var btn_red;
 var btn_green;
 
-var r = 0;
-var g = 0;
-var b = 0;
+var r = 255;
+var g = 255;
+var b = 255;
 
 function setup() {
   createCanvas(400, 400); 
@@ -16,18 +16,12 @@ function setup() {
   btn_green= createButton("GREEN");
   btn_green.position(250,50)
   btn_green.mousePressed(green_bg)
-  background("white");
+ 
 }
 
 function draw() {
 
-  if (btn_green.mousePressed){
-    background("green")
-  }
-
-  if (btn_red.mousePressed){
-    background("red")
-  }
+  background(r, g, b);
 
   
 }
